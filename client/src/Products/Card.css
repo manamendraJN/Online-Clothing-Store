@@ -1,0 +1,42 @@
+.card {
+    border-radius: 12px;
+    overflow: hidden; /* Clip content that overflows the rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+  }
+  
+  .card-link {
+    display: block;
+  }
+  
+  .card-img-container {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden; /* Clip image to fit rounded corners */
+  }
+  
+  .card-img {
+    width: 400px;
+    height: 300px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  
+  .card-details {
+    padding: 1rem;
+  }
+  
+  .productname {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .brand {
+    font-style: italic;
+    color: #888;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #333;
+  }
+  

@@ -1,0 +1,30 @@
+/* Styles for PDF generation */
+.generating-pdf {
+  width: 210mm;
+  background-color: white;
+  padding: 10mm;
+  margin: 0 auto;
+}
+
+.generating-pdf h1 {
+  font-size: 18pt;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.generating-pdf p {
+  font-size: 10pt;
+}
+
+.generating-pdf .order-item {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 20px;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
