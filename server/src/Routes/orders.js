@@ -107,4 +107,36 @@ router.delete('/:orderId', async (req, res) => {
   }
 });
 
+router.get('/:orderId', async (req, res) => {
+  try {
+    const { orderId } = req.params;
+
+    if (!mongoose.Types.ObjectId.isValid(orderId)) {
+      return res.status(400).json({
+        success: false,
+        error: 'Invalid order ID format'
+      });
+    }
+
+    const order = await Order.findById(orderId); // Optionally populate userId with email
+    if (!order) {
+      return res.status(404).json({
+        success: false,
+        error: 'Order not found'
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      order
+    });
+  } catch (error) {
+    console.error('Error fetching order by ID:', error);
+    return res.status(500).json({
+      success: false,
+      error: 'Server error while fetching order'
+    });
+  }
+});
+
 module.exports = router;

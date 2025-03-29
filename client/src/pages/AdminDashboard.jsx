@@ -65,7 +65,7 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div className="flex h-screen">
+    <div className="ml-[16rem] flex h-screen">
       <AdminSidebar />
       <div className="flex-1 p-5">
       <div className='bg-red-900 p-3 m-8 mt-2 mb-2 rounded-xl'>

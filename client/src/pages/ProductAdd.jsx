@@ -133,7 +133,7 @@ const uploadImageToCloudinary = async (file) => {
   return (
 
      
-  <div className="flex h-screen w-screen overflow-hidden ">
+  <div className="ml-[16rem] flex h-screen  overflow-hidden">
     <AdminSidebar />
     <div className="flex-grow flex items-center justify-center bg-cover bg-no-repeat" style={{ backgroundImage: "url('/addpro.jpg')" }}>
   <div className=" w-full bg-cover bg-opacity-0 shadow-lg rounded-lg ">

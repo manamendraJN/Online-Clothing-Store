@@ -55,8 +55,9 @@ function Plist() {
   const totalPrice = products.reduce((acc, curr) => acc + (parseInt(curr.Quantity) * parseFloat(curr.Price) || 0), 0);
 
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
        <AdminSidebar />
+       <div className="ml-[16rem] py-10 px-4 sm:px-6 lg:px-8">
         <div
           className="bg-repeat-y bg-cover bg-center"
           style={{
@@ -161,6 +162,7 @@ function Plist() {
               </div>
             </div>
           </div>
+        </div>
         </div>
     </div>
   );
